@@ -46,3 +46,4 @@ group :development do
 end
 gem 'rails_admin', '~> 1.0'
 gem 'devise', '~> 3.2'
+gem 'cancan'

@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+	margin:0px;
+}
+
+.main_video {
+	position:relative;
+	width:100%;
+}

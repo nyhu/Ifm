@@ -1,0 +1,81 @@
+@-moz-keyframes fadeOut {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+@-webkit-keyframes fadeOut {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+@keyframes fadeOut {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+hr {
+	align:center;
+	color:black;
+}
+
+.container-black {
+	display:table;
+	box-sizing: border-box;
+	background-color:black;
+	color:white;
+}
+
+#logo_dopeyes {
+	margin-top:12px;
+	margin-left:20%;
+	margin-right:20%;
+	height:25px;
+	width:90px;
+	display:inline-table;
+}
+
+.simple-text {
+	size:10em;
+	text-align:right;
+}
+
+.video-center {
+	width:60%;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+	z-index:1;
+	pointer-events: auto;
+}
+
+.crossvideo-text {
+	color:#2eff99;
+	position:absolute;
+	font-size:10vw;
+	top:42%;
+	left:2%;
+	z-index:1;
+}
+
+.video-parent-div {
+	pointer-events: none;
+	position:relative;
+	margin-bottom:10%;
+}
+
+.video-parent-div :hover .crossvideo-text {
+	display:block;
+	-webkit-animation: fadeOut 1s;
+	-moz-animation: fadeOut 1s;
+	animation: fadeOut 1s;
+	z-index:0;
+	overflow: hidden;
+}
+
+.video-parent-div :hover .video-center {
+	z-index:2;
+}
+
+.dot-studio {
+	display:block;
+	width:auto;
+	font-size:5.5vw;
+}

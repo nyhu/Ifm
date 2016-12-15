@@ -1,3 +1,71 @@
-<h1>welcome to home page</h1>
-<%= video_tag 'head_over_heels.mp4', controls:"controls", preload:"auto", class:"video-js", id:"main_video" %>
-<script src="http://vjs.zencdn.net/5.12.6/video.js"></script>
+<div class="navbar navbar-inverse navbar-fixed-top" style="background-color:white;">
+	<div class="container">
+		<div class="navbar-header">
+		<%= image_tag 'logo_dopeyes.png', id:"logo_dopeyes"%>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">WE ARE</a></li>
+				<li><a href="#how_it_works">HOW IT WORKS</a></li>
+				<li><a href="#expertise">EXPERTISE</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<p class="container simple-text">HAVE YOU EVER</br>DREAMED ABOUT</br>INTERACTIVE VIDEO?</p>
+<div class="video-parent-div">
+	<%= video_tag 'Candy For Richmen Spring Summer 2014 collection.mp4', controls:"controls", preload:"auto", class:"video-js video-center", id:"main_video" %>
+	<script src="http://vjs.zencdn.net/5.12.6/video.js"></script>
+	<script type="text/javascript">
+		var vid = document.getElementById("main_video");
+		vid.play();
+		vid.loop = true;
+	</script>
+	<div><h1 class="crossvideo-text">CANDY</br>4 RICHMEN</h1></div>
+</div>
+
+<div class="container-black">
+	<div class="col-xs-5">
+		<ul style="margin-top:20%">
+			<li><a href="https://www.facebook.com/dopeyes.studio/">FACEBOOK</a></li>
+			<li><a href="https://www.instagram.com/dopeyes.studio/">INSTAGRAM</a></li>
+			<li><a href="https://fr.linkedin.com/">LINKEDIN</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-6">
+		<h1>DOPEYES IS A HIGH STANDARD CREATIVE STUDIO. WE THINK AND PRODUCE INTERACTIVE VIDEO, BRAND CONTENT FOR FASHION AND DESIGN BRANDS.</h1>
+	</div>
+</div>
+
+
+<div class="container" style="margin-top:5%;">
+	<div class="col-xs-4">
+		<p>
+			We produce digital marketing materials.
+			</br></br>
+			Specialized in interactive content, we produce commercials and multiple elements of brand content according to the needs of each project.
+			</br></br>
+			Our creative and production team are ready to meet a wide range of commercial film and video shoot requirements, from beginning to end.
+			</br></br>
+			Services cover all areas: budgeting, planning, creative direction, styling, set designing shooting. Post-production needs, such as editing, color grading, 3D and special effects, can all be met with our collaborators. 
+		</p>
+	</div>
+	<div class="col-xs-2"></div>
+	<div class="col-xs-5">
+		<h3 class="dot-studio" style="color:white;background-color:black">DOPEYES</h3>
+		<h3 class="dot-studio">.STUDIO</h3>
+	<div>
+</div>
+
+<hr>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>

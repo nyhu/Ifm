@@ -47,3 +47,5 @@ end
 gem 'rails_admin', '~> 1.0'
 gem 'devise', '~> 3.2'
 gem 'cancan'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'

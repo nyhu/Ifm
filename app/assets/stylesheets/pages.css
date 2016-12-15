@@ -11,16 +11,22 @@
 	to { opacity: 0; }
 }
 
-hr {
-	align:center;
-	color:black;
-}
-
 .container-black {
 	display:table;
 	box-sizing: border-box;
 	background-color:black;
 	color:white;
+	padding-right:20%;
+	padding-left:20%;
+}
+
+.p_classic {
+	margin-left:5%;
+	font-size:1.3vw;
+}
+
+.h1_classic {
+	font-size:2.7vw;
 }
 
 #logo_dopeyes {
@@ -77,5 +83,93 @@ hr {
 .dot-studio {
 	display:block;
 	width:auto;
-	font-size:5.5vw;
+	font-size:7vw;
+}
+
+.img_text {
+	position:relative;
+	margin-top:14%;
+}
+
+#img_text1 {
+	background:rgba(255,255,255,0.5);
+	padding-left:2%;
+	padding-right:2%;
+	position:absolute;
+	right:0;
+	top:-15%;
+	width:40%;
+}
+
+#img_steps1 {
+	position:relative;
+	display:inline-block;
+	width:70%;
+	height:auto;
+}
+
+#img_text2 {
+	background:rgba(255,255,255,0.5);
+	padding-left:2%;
+	padding-right:2%;
+	position:absolute;
+	left:0;
+	top:-15%;
+	width:40%;
+}
+#img_steps2 {
+	margin-left:20%;
+	position:relative;
+	display:inline-block;
+	width:70%;
+	height:auto;
+}
+
+.green_title {
+	color:#2eff99;
+}
+
+.green_bg {
+	color:#2eff99;
+	position:absolute;
+	bottom:0;
+	right:10%;
+}
+
+#img_text3 {
+	background:rgba(255,255,255,0.5);
+	padding-left:2%;
+	padding-right:2%;
+	padding-left:2%;
+	padding-right:2%;
+	position:absolute;
+	right:0;
+	top:-15%;
+	width:40%;
+	z-index:2;
+}
+
+.right {
+	right:0;
+}
+
+.left {
+	left:0;
+}
+
+.glyphicon {
+	margin-top:200%;
+}
+
+.carousel-control-reset {
+	background-color:transparent;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 15%;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+	z-index:3;
 }

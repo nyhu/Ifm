@@ -173,3 +173,41 @@
 	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 	z-index:3;
 }
+
+#item_text {
+	margin-left:2%;
+	position:absolute;
+	width:45%;
+	top:0;
+	right:0;
+}
+
+#img_item {
+	width:50%;
+	height:auto;
+}
+
+.inline {
+	display:inline-block;
+}
+
+.icon {
+	margin-left:5%;
+	display:inline-block;
+	width:3vw;
+	height:3vw;
+}
+
+.comment {
+	margin-top:10%;
+	margin-left:10%;
+}
+
+.comment_author {
+	color:#692ce8;
+	font-size:1.5vw;
+}
+
+.comment_text {
+	font-size:1vw;
+}

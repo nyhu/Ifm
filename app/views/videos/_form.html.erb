@@ -17,11 +17,8 @@
   </div>
   <div class="field">
     <%= f.label :link %><br>
-    <%= f.text_field :link %>
-  </div>
-  <div class="field">
-    <%= f.label :create_time %><br>
-    <%= f.datetime_select :create_time %>
+	<%= video_tag(@video.link_url) if @video.link? %>
+    <%= f.file_field :link %>
   </div>
   <div class="actions">
     <%= f.submit %>

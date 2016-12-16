@@ -21,11 +21,9 @@
   </div>
   <div class="field">
     <%= f.label :picture %><br>
-    <%= f.text_field :picture %>
-  </div>
-  <div class="field">
-    <%= f.label :qrcode %><br>
-    <%= f.text_field :qrcode %>
+    <%= image_tag(@item.picture_url) if @item.picture? %>
+	<%= hidden_field( "upload", "picture_cache" ) %>
+	<%= file_field( "upload", "picture" ) %>
   </div>
   <div class="actions">
     <%= f.submit %>

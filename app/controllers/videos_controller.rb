@@ -1,6 +1,10 @@
-class VideosController < ApplicationController
-  before_action :set_video, only: [:show, :edit, :update, :destroy]
+require 'carrierwave/orm/activerecord'
 
+class VideosController < ApplicationController
+  extend CarrierWave::Mount
+
+  before_action :set_video, only: [:show, :edit, :update, :destroy]
+  mount_uploader :video, VideoUploader
   # GET /videos
   # GET /videos.json
   def index
@@ -61,6 +65,9 @@ class VideosController < ApplicationController
     end
   end
 
+  def delete
+    self.destroy
+  end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_video

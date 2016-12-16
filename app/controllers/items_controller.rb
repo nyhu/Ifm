@@ -1,5 +1,10 @@
+require 'carrierwave/orm/activerecord'
+
 class ItemsController < ApplicationController
+  extend CarrierWave::Mount
+
   before_action :set_item, only: [:show, :edit, :update, :destroy]
+  mount_uploader :item, ItemUploader
 
   # GET /items
   # GET /items.json
@@ -59,6 +64,10 @@ class ItemsController < ApplicationController
       format.html { redirect_to items_url, notice: 'Item was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def delete
+    self.destroy
   end
 
   private

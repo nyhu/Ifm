@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :comments
+  resources :items
+  resources :videos
   devise_for :users, controllers: { sessions: 'users/sessions' }
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

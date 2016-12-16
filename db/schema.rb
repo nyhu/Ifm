@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161203183157) do
+ActiveRecord::Schema.define(version: 20161216003606) do
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "title"
+    t.text     "content"
+    t.integer  "item_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.string   "title"
+    t.text     "content"
+    t.string   "picture"
+    t.string   "qrcode"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "pseudo",                 default: "",      null: false
@@ -32,5 +50,13 @@ ActiveRecord::Schema.define(version: 20161203183157) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "videos", force: :cascade do |t|
+    t.string   "title"
+    t.string   "link"
+    t.datetime "create_time"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
 end
